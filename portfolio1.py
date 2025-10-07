@@ -76,7 +76,7 @@ with tabs[0]:
 
     st.subheader("📄 Download My Resume")
 
-    with open("resume_jay.pdf", "rb") as pdf_file:
+    with open("resume-1.pdf", "rb") as pdf_file:
         PDFbyte = pdf_file.read()
 
     st.download_button(
