@@ -13,3 +13,5 @@ __pycache__/
 
 # Ignore Streamlit local config folder
 .streamlit/
+
+images
