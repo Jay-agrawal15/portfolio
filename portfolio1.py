@@ -74,6 +74,18 @@ with tabs[0]:
     with col2:
         st.write("**Bachelor of Engineering – Computer Engineering**  \nSal Engineering and Technical Institute (GTU)  \n📅 *July 2023*  \n📊 CGPA: 7.59")
 
+    st.subheader("📄 Download My Resume")
+
+    with open("resume_jay.pdf", "rb") as pdf_file:
+        PDFbyte = pdf_file.read()
+
+    st.download_button(
+        label="📥 Click Here to Download My Resume",
+        data=PDFbyte,
+        file_name="Jay_Agrawal_Resume.pdf",
+        mime="application/pdf"
+    )
+
 # --- SKILLS TAB ---
 with tabs[1]:
     st.header("Technical Skills")
